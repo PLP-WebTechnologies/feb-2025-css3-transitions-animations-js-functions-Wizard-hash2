@@ -1,0 +1,150 @@
+body {
+    background-image: url("https://images.pexels.com/photos/6120182/pexels-photo-6120182.jpeg?auto=compress&cs=tinysrgb&w=600");
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+#Registration {
+    align-self: left;
+
+
+
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 29px;
+
+}
+
+.Button_sub {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+    background-color: rgb(230, 137, 23);
+    border: 5px solid black;
+    cursor: pointer;
+    padding: 2%;
+
+
+}
+
+.Navigat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    list-style-type: none;
+    gap: 5%;
+    position: relative;
+}
+
+@media (min-width:500px) {
+    .Navigat {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+        gap: 5rem;
+
+    }
+
+    #Registration {
+        align-self: center;
+        justify-content: center;
+        margin-left: 30%;
+        margin-top: -400px;
+
+
+    }
+
+    .Colchange,
+    .ImageChoch,
+    .Animate {
+        height: 50px;
+        width: 100px;
+        border: 5px solid #5a18f5;
+        transition: width 0.1 ease, height 0.1 ease, background-color 0.1 ease, transform 0.5s ease-in-out;
+        border-radius: 5px;
+    }
+
+    .ImageChoch:hover {
+        transition: 3s ease ease-in-out;
+        background-color: bisque;
+        animation: 5s infinite;
+        transform: scale(1.1);
+    }
+
+    .Colchange:hover {
+        transition: 3s ease ease-in-out;
+        background-color: bisque;
+        animation: 5s infinite;
+        transform: scale(1.1);
+    }
+
+    .Animate:hover {
+        transition: 3s ease ease-in-out;
+        background-color: bisque;
+        animation: 5s infinite;
+        transform: scale(1.1);
+    }
+
+    .displayer {
+        background-color: rgb(16, 37, 158);
+        height: 200px;
+        width: 300px;
+           
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+
+    .displayer.animate {
+        opacity: 1;
+        animation: moveRight 2s ease-in-out forwards infinite;
+    }
+
+    
+
+    .Colchange.ANY {
+        background-color: rgb(103, 28, 28);
+        opacity: 1;
+        animation: moveright 2s ease-in-out forwards infinite;
+
+    }
+
+    @keyframes moveright {
+
+        0%,
+        100% {
+            transform: translateX(50px);
+        }
+
+        50% {
+            transform: translateY(-50px);
+        }
+    }
+
+
+    
+
+    @keyframes moveRight {
+
+        0%,
+        100% {
+            transform: translateX(0);
+            
+        }
+
+        50% {
+            transform: translateY(100px);
+            transform: translateX(500px);
+        }
+
+    }
+
+}
